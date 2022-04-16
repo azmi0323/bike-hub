@@ -1,0 +1,50 @@
+.input-field{
+    height: 45px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+
+}
+.login-btn{
+    background-color: #7f8fa6;
+    color: #dcdde1;
+    height: 45px;
+    padding: 0px 80px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+   
+}
+.login-btn:hover{
+    background-color: #dcdde1;
+    color: #7f8fa6;
+    height: 45px;
+    padding: 0px 80px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.signIn-with-google-btn{
+    background-color: #7f8fa6;
+    color: #dcdde1;
+    height: 45px;
+    padding: 0px 80px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.signIn-with-google-btn:hover{
+    background-color: #dcdde1;
+    color: #7f8fa6;
+    height: 45px;
+    padding: 0px 80px;
+    border: none;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}

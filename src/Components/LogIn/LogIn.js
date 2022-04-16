@@ -2,10 +2,9 @@ import React from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
-
-
+import './LogIn.css'
 const LogIn = () => {
-  const [signInWithGoogle,loading,error] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, error] = useSignInWithGoogle(auth);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || "/";
@@ -15,34 +14,41 @@ const LogIn = () => {
       navigate(from, { replace: true });
     });
   };
-  if(error){
-
+  if (error) {
   }
 
   return (
-    <div>
+    <div className="mt-5">
       <form className="w-50 mx-auto">
-        <input 
-          className="w-100"
+        <h3 className="text-center text-white">Please Login</h3>
+        <input
+          className="w-100 mt-3 input-field"
           type="email"
           name=""
           id=""
           placeholder="Enter Your Email"
         />
-        <br />
         <input
-          className="w-100"
+          className="w-100 input-field mt-3"
           type="password"
           placeholder="Your password"
           name=""
           id=""
         />
-        <br />
-        <input className="btn btn-primary" type="button" value="Login" />
-        <br />
+
+        <input
+          className="login-btn d-block mx-auto mt-3"
+          type="button"
+          value="Login"
+        />
+        <div className="text-white d-flex justify-content-center mt-3">
+          <div></div>
+          <div>or</div>
+          <div></div>
+        </div>
         <input
           onClick={() => handleGoogleSignIn()}
-          className="btn mt-2 btn-info"
+          className="mt-3 d-block mx-auto signIn-with-google-btn"
           type="button"
           value="SignIn With Google"
         />
