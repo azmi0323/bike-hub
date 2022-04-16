@@ -21,7 +21,7 @@ const Header = () => {
             <Link to="/contact">Contact</Link>
             </Nav>
             <Nav>
-            <span className="fw-bold text-primary">{user?.displayName && user.displayName}</span>
+            <span className="fw-bold d-flex justify-content-center align-items-center text-primary">{user?.displayName && user.displayName}</span>
         {user?.uid ? <button className="btn btn-danger ms-2" onClick={()=>signOut(auth)}>Sign Out</button> : <Link to="/login">Login</Link>}
             </Nav>
           </Navbar.Collapse>

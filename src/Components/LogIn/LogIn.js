@@ -5,7 +5,7 @@ import auth from "../../firebase.init";
 
 
 const LogIn = () => {
-  const [signInWithGoogle] = useSignInWithGoogle(auth);
+  const [signInWithGoogle,loading,error] = useSignInWithGoogle(auth);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location?.state?.from?.pathname || "/";
@@ -15,12 +15,15 @@ const LogIn = () => {
       navigate(from, { replace: true });
     });
   };
+  if(error){
+
+  }
 
   return (
     <div>
-      <form className="">
-        <input
-          className=""
+      <form className="w-50 mx-auto">
+        <input 
+          className="w-100"
           type="email"
           name=""
           id=""
@@ -28,7 +31,7 @@ const LogIn = () => {
         />
         <br />
         <input
-          className=""
+          className="w-100"
           type="password"
           placeholder="Your password"
           name=""
