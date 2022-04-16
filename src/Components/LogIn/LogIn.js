@@ -1,6 +1,6 @@
 import React from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
 import './LogIn.css'
 const LogIn = () => {
@@ -36,6 +36,7 @@ const LogIn = () => {
           id=""
         />
 
+        <p className="text-info mt-3">New at CaptureTheMoment?  <Link className="text-decoration-none text-black rounded px-2 ms-2 fw-bold my-2 bg-warning" to='/signUp'>Create an Account</Link></p>
         <input
           className="login-btn d-block mx-auto mt-3"
           type="button"
