@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./SignUp.css";
 const SignUp = () => {
   return (
-    <div className="mt-5">
+    <div className=" mt-5">
       <form className="w-50 mx-auto">
         <h3 className="text-center text-white">Please Sign up</h3>
         <input
