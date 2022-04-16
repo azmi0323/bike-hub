@@ -7,14 +7,14 @@ const Header = () => {
     <div className="header">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand >Capture<span className="text-info fw-bold">The</span>Moment</Navbar.Brand>
+          <Navbar.Brand className="" >Capture<span className="text-info fw-bold" >The</span>Moment</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
             <Link to="/">Home</Link>
-            <Link to="/orders">Blogs</Link>
-            <Link to="/reviews">About</Link>
-            <Link to="/register">Contact</Link>
+            <Link to="/blogs">Blogs</Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
             </Nav>
             <Nav>
               <button>Log In</button>
