@@ -1,7 +1,7 @@
 [
     {
     "id": 1,
-    "name": "Silver Package Single",
+    "name": "Silver Package Single Person",
     "price": "49.99",
     "body": "Silver Single package you can get in just 49.99 bucks. Here you will get 12 edited photo with 50 row file.",
     "img" : "https://randomuser.me/api/portraits/men/18.jpg"
@@ -9,7 +9,7 @@
     
     {
     "id": 2,
-    "name": "Silver Package Couple",
+    "name": "Silver Package Couple Shoot",
     "price": "99.99",
     "body": "Silver Couple package you can get in just 99.99 bucks. Here you will get 24 edited photo with 100 row file.",
     "img" : "https://randomuser.me/api/portraits/men/18.jpg"

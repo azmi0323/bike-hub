@@ -18,31 +18,33 @@ const LogIn = () => {
   }
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 ">
       <form className="w-50 mx-auto">
-        <h3 className="text-center text-white">Please Login</h3>
+        <h3 className="text-center text-success fw-bold pt-4">Please Login</h3>
+        <label className="mt-3 text-success fw-bold" htmlFor="email">Your Email:</label>
         <input
-          className="w-100 mt-3 input-field"
+          className="w-100 input-field"
           type="email"
           name=""
           id=""
           placeholder="Enter Your Email"
         />
+        <label className="mt-3 text-success fw-bold" htmlFor="email">Your Password:</label>
         <input
-          className="w-100 input-field mt-3"
+          className="w-100 input-field "
           type="password"
           placeholder="Your password"
           name=""
           id=""
         />
 
-        <p className="text-info mt-3">New at CaptureTheMoment?  <Link className="text-decoration-none text-black rounded px-2 ms-2 fw-bold my-2 bg-warning" to='/signUp'>Create an Account</Link></p>
+        <p className="text-danger fw-bold mt-3">New at CaptureTheMoment?  <Link className="text-decoration-none text-black rounded px-2 ms-2 fw-bold my-2 bg-warning" to='/signUp'>Create an Account</Link></p>
         <input
           className="login-btn d-block mx-auto mt-3"
           type="button"
           value="Login"
         />
-        <div className="text-white d-flex justify-content-center mt-3">
+        <div className="text-success d-flex justify-content-center mt-3">
           <div></div>
           <div>or</div>
           <div></div>

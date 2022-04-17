@@ -1,23 +1,20 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
-
+import "./Products.css";
 const Products = (props) => {
-  const {img,name}=props.product
+  const { img, name, body, price } = props.product;
   return (
-    <div className="">
+    <div className="user-card mt-5">
       <CardGroup className="">
         <Card>
           <Card.Img variant="top" src={img} />
           <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
-            </Card.Text>
+            <Card.Title className="text-success fw-bold fs-2">{name}</Card.Title>
+            <Card.Title>Price: <span className="text-danger fw-bold">$ {price}</span></Card.Title>
+            <Card.Text>{body}</Card.Text>
           </Card.Body>
           <Card.Footer>
-            <button>Details</button>
+            <button className="btn btn-info d-block w-100">Book Now</button>
           </Card.Footer>
         </Card>
       </CardGroup>
