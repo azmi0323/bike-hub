@@ -1,0 +1,66 @@
+[
+    {
+    "id": 1,
+    "name": "Silver Package Single",
+    "price": "49.99",
+    "body": "Silver Single package you can get in just 49.99 bucks. Here you will get 12 edited photo with 50 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 2,
+    "name": "Silver Package Couple",
+    "price": "99.99",
+    "body": "Silver Couple package you can get in just 99.99 bucks. Here you will get 24 edited photo with 100 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 3,
+    "name": "Golden Package Single",
+    "price": "99.99",
+    "body": "Golden Single package you can get in just 99.99 bucks. Here you will get 24 edited photo with 100 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 4,
+    "name": "Golden Package Couple",
+    "price": "149.99",
+    "body": "Golden Couple package you can get in just 149.99 bucks. Here you will get 30 edited photo with 80 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 5,
+    "name": "Silver Wild life Package",
+    "price": "249.99",
+    "body": "Silver Single package you can get in just 249.99 bucks. Here you will get 30 edited photo with 100 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 6,
+    "name": "Golden Wild life Package",
+    "price": "349.99",
+    "body": "Silver Single package you can get in just 349.99 bucks. Here you will get 50 edited photo with 150 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 7,
+    "name": "Silver Product Photography Package",
+    "price": "299.99",
+    "body": "Silver Single package you can get in just 299.99 bucks. Here you will get 70 edited photo with 200 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    },
+    
+    {
+    "id": 8,
+    "name": "Golden Product Photography Package",
+    "price": "449.99",
+    "body": "Silver Single package you can get in just 449.99 bucks. Here you will get 200 edited photo with 400 row file.",
+    "img" : "https://randomuser.me/api/portraits/men/18.jpg"
+    }
+    
+]

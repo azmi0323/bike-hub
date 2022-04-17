@@ -23,12 +23,12 @@ const Header = () => {
               <Link to="/contact">Contact</Link>
             </Nav>
             <Nav>
-              <span className="fw-bold d-flex justify-content-center align-items-center text-primary">
+              <span className="fw-bold d-flex justify-content-center align-items-center text-info">
                 {user?.displayName && user.displayName}
               </span>
               {user?.uid ? (
                 <button
-                  className="btn btn-danger ms-2"
+                  className="btn fw-bold btn-danger ms-2"
                   onClick={() => signOut(auth)}
                 >
                   Sign Out
