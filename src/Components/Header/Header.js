@@ -21,7 +21,6 @@ const Header = () => {
               <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/blogs">Blogs</NavLink>
               <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/services">Services</NavLink>
               <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/about">About</NavLink>
-              <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/contact">Contact</NavLink>
             </Nav>
             <Nav>
               <span className="fw-bold d-flex justify-content-center align-items-center text-info">
@@ -37,6 +36,7 @@ const Header = () => {
               ) : (
                 <div>
                   <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/login">Login</NavLink>
+                  
                   <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/signUp">Sign Up</NavLink>
                 </div>
               )}

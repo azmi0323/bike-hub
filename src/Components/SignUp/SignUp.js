@@ -26,7 +26,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="">
+    <div className=" my-4">
       <form onSubmit={handleCreateUser} className="w-50 mx-auto">
         <h3 className="text-center text-success fw-bold pt-4">
           Please Sign up
