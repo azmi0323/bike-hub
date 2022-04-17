@@ -18,7 +18,7 @@ const LogIn = () => {
   }
 
   return (
-    <div className="mt-5 ">
+    <div className=" login-page ">
       <form className="w-50 mx-auto">
         <h3 className="text-center text-success fw-bold pt-4">Please Login</h3>
         <label className="mt-3 text-success fw-bold" htmlFor="email">Your Email:</label>

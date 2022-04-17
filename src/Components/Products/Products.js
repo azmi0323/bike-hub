@@ -4,9 +4,9 @@ import "./Products.css";
 const Products = (props) => {
   const { img, name, body, price } = props.product;
   return (
-    <div className="user-card mt-5">
+    <div className="user-card mt-5 ">
       <CardGroup className="">
-        <Card>
+        <Card className="">
           <Card.Img variant="top" src={img} />
           <Card.Body>
             <Card.Title className="text-success fw-bold fs-2">{name}</Card.Title>

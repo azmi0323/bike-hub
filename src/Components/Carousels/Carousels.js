@@ -20,7 +20,7 @@ const Carousels = () => {
 
         <Carousel.Caption>
         <h1 className="fw-bold text-info">I PROVIDE WILD LIFE AND MODEL PHOTOGRAPHY SERVICES TO MY CLINT</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Heir me for your wedding photography. I will give you the best survices.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -29,7 +29,7 @@ const Carousels = () => {
         <Carousel.Caption>
         <h1 className="fw-bold text-info">GET THE BEST PHOTO OF YOURS TODAY</h1>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            If you want photography for your products heir me today. You will get what you want.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
