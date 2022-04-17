@@ -2,25 +2,32 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./SignUp.css";
 const SignUp = () => {
-  const [email,setEmail] = useState("");
-  const [password,setPassword] = useState("");
-  const [confirmPassword,setConfirmPassword] = useState("");
-  const [error,setError] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const handleEmailBlur=event=>{
+  const handleEmailBlur = (event) => {
     setEmail(event.target.value);
-  }
-  const handlePasswordBlur=event=>{
+  };
+  const handlePasswordBlur = (event) => {
     setPassword(event.target.value);
-  }
-  const handleConfirmPasswordBlur=event=>{
+  };
+  const handleConfirmPasswordBlur = (event) => {
     setConfirmPassword(event.target.value);
-  }
+  };
 
+  const handleCreateUser = (event) => {
+    event.preventDefault();
+    if(password!==confirmPassword){
+      setError('Password did not Match')
+      return;
+    }
+  };
 
   return (
     <div className="">
-      <form className="w-50 mx-auto">
+      <form onSubmit={handleCreateUser} className="w-50 mx-auto">
         <h3 className="text-center text-success fw-bold pt-4">
           Please Sign up
         </h3>
@@ -28,18 +35,16 @@ const SignUp = () => {
           Name:
         </label>
         <input
-          onBlur={handleEmailBlur}
           className="w-100 input-field"
           type="email"
           name=""
           id=""
-          required
         />
         <label className="mt-3 text-success fw-bold" htmlFor="email">
-          Email
+          Email:
         </label>
         <input
-          onBlur={handlePasswordBlur}
+          onBlur={handleEmailBlur}
           className="w-100 input-field"
           type="text"
           name=""
@@ -50,6 +55,7 @@ const SignUp = () => {
           Password:
         </label>
         <input
+          onBlur={handlePasswordBlur}
           className="w-100 input-field"
           type="password"
           required
@@ -67,7 +73,7 @@ const SignUp = () => {
           name=""
           id=""
         />
-
+        <p className="text-danger">{error}</p>
         <p className="text-info mt-3">
           Already have an Account?
           <span>
@@ -79,10 +85,11 @@ const SignUp = () => {
             </Link>
           </span>
         </p>
+
         <input
           className="login-btn d-block mx-auto mt-3"
           type="button"
-          value="SignUp"
+          value="Sign Up"
         />
       </form>
     </div>
