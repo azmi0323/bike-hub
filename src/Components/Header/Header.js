@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Header.css";
 const Header = () => {
@@ -17,10 +17,11 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Link to="/">Home</Link>
-              <Link to="/blogs">Blogs</Link>
-              <Link to="/about">About</Link>
-              <Link to="/contact">Contact</Link>
+              <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/">Home</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/blogs">Blogs</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/services">Services</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/about">About</NavLink>
+              <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/contact">Contact</NavLink>
             </Nav>
             <Nav>
               <span className="fw-bold d-flex justify-content-center align-items-center text-info">
@@ -35,8 +36,8 @@ const Header = () => {
                 </button>
               ) : (
                 <div>
-                  <Link to="/login">Login</Link>
-                  <Link to="/signUp">Sign Up</Link>
+                  <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/login">Login</NavLink>
+                  <NavLink className={({ isActive }) => (isActive ? "link-active" : "link")} to="/signUp">Sign Up</NavLink>
                 </div>
               )}
             </Nav>

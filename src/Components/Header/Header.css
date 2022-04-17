@@ -1,12 +1,25 @@
-
-.header nav a{
-    font-size: 20px;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    color: rgba(228, 228, 255, 0.737);
+.nav-style{
+    background-color: rgb(244, 242, 240);
+}
+.link:hover{
+    color: rgb(13, 214, 217);
 }
 
-.header nav a:hover{
-    color: rgb(183, 0, 0);
+
+.link{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+}
+.link-active{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 20px;
+    color: rgb(13, 214, 217);
+    font-weight: bold;
+}
+.link-active:hover{
+    color: rgb(13, 214, 217);
 }

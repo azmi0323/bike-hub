@@ -4,7 +4,7 @@ import "./Products.css";
 const Products = (props) => {
   const { img, name, body, price } = props.product;
   return (
-    <div className="user-card mt-5 ">
+    <div className="user-card mt-5">
       <CardGroup className="">
         <Card className="">
           <Card.Img variant="top" src={img} />
