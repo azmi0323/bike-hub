@@ -2,7 +2,7 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import auth from "../../firebase.init";
 import "./Header.css";
 const Header = () => {

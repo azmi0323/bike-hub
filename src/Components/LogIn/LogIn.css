@@ -2,50 +2,50 @@
     height: 45px;
     padding: 10px 20px;
     border: none;
-    border-radius: 25px;
-    border: 1px solid red;
+    border-radius: 15px;
+   
 
 }
 .login-btn{
-    background-color: #7f8fa6;
-    color: #dcdde1;
+    background-color:#ffc525;
+    color: #000000;
     height: 45px;
     padding: 0px 80px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
    
 }
 .login-btn:hover{
-    background-color: #dcdde1;
-    color: #7f8fa6;
+    background-color: #da9f30;
+    
     height: 45px;
     padding: 0px 80px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
 }
 
 .signIn-with-google-btn{
-    background-color: #7f8fa6;
-    color: #dcdde1;
-    height: 45px;
+    background-color: white;
+    color: #000000;
+    height: 55px;
     padding: 0px 80px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
 }
 
 .signIn-with-google-btn:hover{
     background-color: #dcdde1;
-    color: #7f8fa6;
-    height: 45px;
+    color: #000000;
+    height: 55px;
     padding: 0px 80px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
     font-weight: 700;
 }

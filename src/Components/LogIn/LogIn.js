@@ -2,7 +2,7 @@ import React from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
-import './LogIn.css'
+import "./LogIn.css";
 const LogIn = () => {
   const [signInWithGoogle, error] = useSignInWithGoogle(auth);
   const location = useLocation();
@@ -21,24 +21,36 @@ const LogIn = () => {
     <div className=" login-page ">
       <form className="w-50 mx-auto">
         <h3 className="text-center text-success fw-bold pt-4">Please Login</h3>
-        <label className="mt-3 text-success fw-bold" htmlFor="email">Your Email:</label>
+        <label className="mt-3 text-success fw-bold" htmlFor="email">
+          Email:
+        </label>
         <input
           className="w-100 input-field"
           type="email"
           name=""
           id=""
-          placeholder="Enter Your Email"
+          required
         />
-        <label className="mt-3 text-success fw-bold" htmlFor="email">Your Password:</label>
+        <label className="mt-3 text-success fw-bold" htmlFor="email">
+          Password:
+        </label>
         <input
-          className="w-100 input-field "
+          className="w-100 input-field"
           type="password"
-          placeholder="Your password"
           name=""
           id=""
+          required
         />
 
-        <p className="text-danger fw-bold mt-3">New at CaptureTheMoment?  <Link className="text-decoration-none text-black rounded px-2 ms-2 fw-bold my-2 bg-warning" to='/signUp'>Create an Account</Link></p>
+        <p className="text-danger fw-bold mt-3">
+          New at CaptureTheMoment?{" "}
+          <Link
+            className="text-decoration-none text-black rounded px-2 ms-2 fw-bold my-2 bg-warning"
+            to="/signUp"
+          >
+            Create an Account
+          </Link>
+        </p>
         <input
           className="login-btn d-block mx-auto mt-3"
           type="button"
