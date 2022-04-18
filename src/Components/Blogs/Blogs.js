@@ -3,7 +3,7 @@ import React from "react";
 const Blogs = () => {
   return (
     <div className="container my-5">
-      <h2 className="fw-bold">1. Difference between <span className="text-warning">authorization and authentication.</span></h2>
+      <h2 className="fw-bold my-4">1. Difference between <span className="text-warning">authorization and authentication.</span></h2>
       <h3 className="text-success fw-bold">Authentication</h3>
       <h6>
         Authentication is the process of verifying your identity by confirming
@@ -14,7 +14,7 @@ const Blogs = () => {
         username and password, but it may also be done with factors of
         authentication, which are several methods to be authenticated.
       </h6>
-      <h3 className="text-success fw-bold">Authorization</h3>
+      <h3 className="text-success mt-4 fw-bold">Authorization</h3>
       <h6>
         Authorization, on the other hand, comes when the system successfully
         authenticates your identity, granting you complete access to resources
@@ -25,11 +25,11 @@ const Blogs = () => {
         granted access to the system's resources.
       </h6>
       <br />
-      <h2 className="fw-bold">
+      <h2 className="fw-bold my-4">
         2. Why are you <span className="text-warning">using firebase?</span> What other options do you have to
         <span className="text-warning"> implement authentication?</span>
       </h2>
-      <h3  className="text-success fw-bold">Why are you using firebase?</h3>
+      <h3  className="text-success mt-3 fw-bold">Why are you using firebase?</h3>
       <h6>
         Indeed, using Firebase as a backend for dynamic apps is a less technical
         and time-consuming alternative to building full-fledged backend code.
@@ -38,7 +38,7 @@ const Blogs = () => {
         serverless, it eliminates the need to bother about cloud server
         configuration details.
       </h6>
-      <h3 className="text-success fw-bold">What other options do you have to implement authentication?</h3>
+      <h3 className="text-success mt-4 fw-bold">What other options do you have to implement authentication?</h3>
       <h6>
         * Assword-based authentication. <br />
         * Passwords are the most common methods of authentication. <br />
@@ -47,7 +47,7 @@ const Blogs = () => {
         * Biometric authentication. <br />* Token-based authentication.
       </h6>
       <br />
-      <h2 className="fw-bold">
+      <h2 className="fw-bold my-4">
         3. What other services does <span className="text-warning ">firebase provide other than authentication.</span>
       </h2>
       <h6>
