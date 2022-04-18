@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div>
       <Carousels></Carousels>
+      <h1 className="text-center mt-5 fw-bold">Our <span className="text-warning">Services</span></h1>
       <div className="container d-flex justify-content-center">
         <div className="card-compo ">
           {products.map((product) => (

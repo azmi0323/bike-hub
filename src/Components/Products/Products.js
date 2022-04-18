@@ -6,6 +6,7 @@ const Products = (props) => {
   return (
     <div className="user-card mt-5">
       <CardGroup className="">
+        
         <Card className="">
           <Card.Img variant="top" src={img} />
           <Card.Body>
@@ -14,7 +15,7 @@ const Products = (props) => {
             <Card.Text>{body}</Card.Text>
           </Card.Body>
           <Card.Footer>
-            <button className="btn btn-info d-block w-100">Book Now</button>
+            <button className="btn btn-warning fw-bold d-block w-100">Book Now</button>
           </Card.Footer>
         </Card>
       </CardGroup>
