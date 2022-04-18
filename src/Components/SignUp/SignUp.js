@@ -16,7 +16,7 @@ const SignUp = () => {
   const handleConfirmPasswordBlur = (event) => {
     setConfirmPassword(event.target.value);
   };
-
+console.log(email,password,confirmPassword);
   const handleCreateUser = (event) => {
     event.preventDefault();
     if(password!==confirmPassword){

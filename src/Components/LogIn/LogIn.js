@@ -1,3 +1,5 @@
+import logo from "../../images/logo1.png"
+import logo2 from "../../images/logo2.png"
 import React from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -61,12 +63,20 @@ const LogIn = () => {
           <div>or</div>
           <div></div>
         </div>
-        <input
-          onClick={() => handleGoogleSignIn()}
+        <button onClick={() => handleGoogleSignIn()}
           className="mt-3 d-block mx-auto signIn-with-google-btn"
           type="button"
-          value="SignIn With Google"
-        />
+          
+          value="SignIn With Google">
+          <img className="me-3" src={logo} alt="" />  SignIn With Google
+        </button>
+        <button onClick={() => handleGoogleSignIn()}
+          className="mt-3 d-block mx-auto signIn-with-google-btn"
+          type="button"
+          
+          value="SignIn With Google">
+          <img className="me-3" src={logo2} alt="" />  SignIn With GitHub
+        </button>
       </form>
     </div>
   );
