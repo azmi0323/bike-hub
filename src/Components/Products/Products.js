@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Products.css";
 const Products = (props) => {
   const { img, name, body, id, price } = props.product;
 
-  const handleBookNowbtn = (product) => {
-    console.log(product);
-  };
+
   return (
     <div className="user-card mt-5">
       <CardGroup className="">
@@ -22,12 +21,12 @@ const Products = (props) => {
             <Card.Text>{body}</Card.Text>
           </Card.Body>
           <Card.Footer>
-            <button
-              onClick={() => handleBookNowbtn(props.product)}
+            <Link to={`/checkOut/${id}`}
+              
               className="btn btn-warning fw-bold d-block w-100"
             >
               Book Now
-            </button>
+            </Link>
           </Card.Footer>
         </Card>
       </CardGroup>

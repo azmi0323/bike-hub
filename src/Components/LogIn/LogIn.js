@@ -2,6 +2,7 @@ import logo from "../../images/logo1.png";
 import logo2 from "../../images/logo2.png";
 import React, { useEffect, useState } from "react";
 import {
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -24,7 +25,9 @@ const LogIn = () => {
     signInWithEmailAndPassword(email, password);
   };
 
-  
+  const [sendPasswordResetEmail, sending, error3] = useSendPasswordResetEmail(
+    auth
+  );
 
   const handleGoogleSignIn = () => {
     signInWithGoogle().then(() => {
@@ -32,7 +35,8 @@ const LogIn = () => {
     });
   };
   const handleForgetPassword = () => {
-    console.log("paici");
+    alert('Varification Email has been send')
+    sendPasswordResetEmail(email)
   };
   if(loading){
     return <p>Loading...</p>
@@ -102,14 +106,7 @@ const LogIn = () => {
         >
           <img className="me-3" src={logo} alt="" /> SignIn With Google
         </button>
-        <button
-          onClick={() => handleGoogleSignIn()}
-          className="mt-3 d-block mx-auto signIn-with-google-btn"
-          type="button"
-          value="SignIn With Google"
-        >
-          <img className="me-3" src={logo2} alt="" /> SignIn With GitHub
-        </button>
+        
       </form>
     </div>
   );
