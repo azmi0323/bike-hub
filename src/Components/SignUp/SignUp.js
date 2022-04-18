@@ -47,6 +47,10 @@ const SignUp = () => {
     createUserWithEmailAndPassword(email,password)
   };
 
+  
+  if(emailLoading){
+    return <p>Loading...</p>
+  }
   return (
     <div className=" my-4">
       <form onSubmit={handleCreateUser} className="w-50 mx-auto">
