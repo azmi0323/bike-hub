@@ -7,6 +7,7 @@ import auth from "../../firebase.init";
 import "./Header.css";
 const Header = () => {
   const [user] = useAuthState(auth);
+  console.log(user);
   return (
     <div className="header">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -26,7 +27,7 @@ const Header = () => {
               <span className="fw-bold d-flex justify-content-center align-items-center text-info">
                 {user?.displayName && user.displayName}
               </span>
-              {user?.uid ? (
+              {user ? (
                 <button
                   className="btn fw-bold btn-danger ms-2"
                   onClick={() => signOut(auth)}

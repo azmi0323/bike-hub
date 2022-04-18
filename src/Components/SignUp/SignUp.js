@@ -1,12 +1,22 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import auth from "../../firebase.init";
 import "./SignUp.css";
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate =useNavigate();
   const [error, setError] = useState("");
-
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
+  const [
+    createUserWithEmailAndPassword,
+    emailUser,
+    emailLoading,
+    error2,
+  ] = useCreateUserWithEmailAndPassword(auth);
   const handleEmailBlur = (event) => {
     setEmail(event.target.value);
   };
@@ -16,13 +26,25 @@ const SignUp = () => {
   const handleConfirmPasswordBlur = (event) => {
     setConfirmPassword(event.target.value);
   };
-console.log(email,password,confirmPassword);
+
+  
+  useEffect(()=>{
+    if(emailUser){
+      navigate(from, { replace: true });
+    }
+  },[emailUser])
+  useEffect(()=>{
+    if(error2){
+      console.log(error2);
+    }
+  },[error2])
   const handleCreateUser = (event) => {
     event.preventDefault();
     if(password!==confirmPassword){
       setError('Password did not Match')
       return;
     }
+    createUserWithEmailAndPassword(email,password)
   };
 
   return (
@@ -31,15 +53,6 @@ console.log(email,password,confirmPassword);
         <h3 className="text-center text-success fw-bold pt-4">
           Please Sign up
         </h3>
-        <label className="mt-3 text-success fw-bold" htmlFor="email">
-          Name:
-        </label>
-        <input
-          className="w-100 input-field"
-          type="email"
-          name=""
-          id=""
-        />
         <label className="mt-3 text-success fw-bold" htmlFor="email">
           Email:
         </label>
@@ -88,7 +101,7 @@ console.log(email,password,confirmPassword);
 
         <input
           className="login-btn d-block mx-auto mt-3"
-          type="button"
+          type="submit"
           value="Sign Up"
         />
       </form>
